@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
     })
   }
 
-  trySignin(){
+  trySignin() {
     this.auth.signIn(this.signInForm.value);
     // this.signInForm.reset();
   }

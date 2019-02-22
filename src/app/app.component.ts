@@ -5,7 +5,7 @@ import { AuthGuard } from './app.auth.guard';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [AuthGuard]
+  providers: [AuthGuard] // ça ne sert à rien  tu l'as deja declarer dans le module cest soit l'un soit l'autre
 })
 export class AppComponent {
   title = 'connexion';
