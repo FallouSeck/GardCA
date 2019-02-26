@@ -9,8 +9,8 @@
           <mat-form-field>
             <input matInput type="password" formControlName="password" placeholder="mot de passe">
           </mat-form-field>
-          <input type="submit" class="btn btn-success" value="Connexion">
-          <!-- <button mat-raised-button color="primary" (click)="trySignin()">Connexion</button> -->
+          <!-- <input type="button" class="btn btn-success"  value="Connexion"> -->
+          <button mat-raised-button color="primary" routerLink="/connexion" (click)="trySignin()">Connexion</button>
         </form>
       </mat-card-content>
     </mat-card>

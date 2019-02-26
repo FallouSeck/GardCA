@@ -14,8 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { ActiveSessionComponent } from './active-session/active-session.component';
 
 // SERVICES
-import { AuthGardService } from './shared/services/auth-gard.service';
 import { AuthGuard } from './app.auth.guard';
+import { AuthentificationService } from './shared/services/authentification.service';
 
 // MODULES
 import { LayoutModule } from './shared/layout/layout.module';
@@ -41,8 +41,8 @@ import { AppRouting } from './app.routing';
     AppRouting
   ],
   providers: [
-    AuthGardService,
-    AuthGuard
+    AuthGuard,
+    AuthentificationService
     ],
   bootstrap: [AppComponent]
 })
