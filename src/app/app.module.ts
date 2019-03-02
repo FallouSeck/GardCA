@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TopbarComponent } from './shared/topbar/topbar.component';
 import { LoginComponent } from './login/login.component';
-import { ActiveSessionComponent } from './active-session/active-session.component';
 
 // SERVICES
 import { AuthGuard } from './app.auth.guard';
@@ -22,14 +21,14 @@ import { LayoutModule } from './shared/layout/layout.module';
 
 // ROUTING
 import { AppRouting } from './app.routing';
+import { sessionRouting } from './active-session/session.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    TopbarComponent,
-    ActiveSessionComponent
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,8 @@ import { AppRouting } from './app.routing';
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
-    AppRouting
+    AppRouting,
+    sessionRouting
   ],
   providers: [
     AuthGuard,
