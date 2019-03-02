@@ -8,7 +8,7 @@ import { AuthGuard } from './app.auth.guard';
 export const APP_ROUTE: Route [] = [
     { path: '', component: HomeComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'connexion', component: ActiveSessionComponent, canActivate: [AuthGuard] },
+    { path: 'active-session', component: ActiveSessionComponent, canActivate: [AuthGuard] },
     { path: '**', redirectTo:'/' }
 ]
 
