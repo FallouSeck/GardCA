@@ -21,7 +21,6 @@ import { LayoutModule } from './shared/layout/layout.module';
 
 // ROUTING
 import { AppRouting } from './app.routing';
-import { sessionRouting } from './active-session/session.routing';
 
 @NgModule({
   declarations: [
@@ -37,8 +36,7 @@ import { sessionRouting } from './active-session/session.routing';
     ReactiveFormsModule,
     FormsModule,
     MatCardModule,
-    AppRouting,
-    sessionRouting
+    AppRouting
   ],
   providers: [
     AuthGuard,

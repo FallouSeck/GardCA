@@ -21,7 +21,15 @@ export class AuthGuard implements CanLoad {
   //   }
   // }
   canLoad(): boolean {
-      return true;
+    const isLoggedIn = this.serv.checkIfLoggedIn();
+      if(isLoggedIn){
+        console.log('yes');
+        return true;
+      }else{
+        console.log('merde');
+        this.router.navigate(['/']);
+        return false;
+      }
     }
 
 }
